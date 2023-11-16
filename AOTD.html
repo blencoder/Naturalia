@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naturalia - Wonky</title>
+    <link rel="stylesheet" href="AOTDStyle.css" />
+    <link rel="icon" href="logo_green.png" type="png" />
+  </head>
+  <body>
+    <header>
+      <div id="left">
+        <a href="https://www.naturalia.fr">
+          <img src="logo_green.png" alt="Logo" id="logo" />
+        </a>
+        <h2 id="Header-Name">Naturalia</h2>
+      </div>
+      <div id="middle">
+        <button>Home</button>
+        <button>Popular</button>
+
+        <button class="current">
+          <a type="AOTD" class="current" href="http://127.0.0.1:5500/AOTD.html"
+            >Article of the day</a
+          >
+        </button>
+        <button>
+          <a href="http://127.0.0.1:5500/impact.html">Who are we?</a>
+        </button>
+        <button>
+          <a href="">More</a>
+        </button>
+      </div>
+      <div id="right">
+        <a href="login.html">
+          <img src="user.png" alt="" id="user" />
+        </a>
+      </div>
+    </header>
+
+    <div class="Butterflies">
+      <h1>Weirdest Butterflies in the world</h1>
+      <h2>1. Long and Skinny Black Butterfly</h2>
+      <img src="Butterflies.png" alt="Long black Skinny Butterflies" />
+      <p id="butterfly_text" class="butterfly-text"></p>
+    </div>
+    <a id="top" href="http://127.0.0.1:5500/AOTD.html">Back to the top</a>
+    <script>
+      fetch("butterfly.txt")
+        .then((response) => response.text())
+        .then((text) => {
+          // Insert the text into the <p> element with the specified ID
+          document.getElementById("butterfly_text").textContent = text;
+        })
+        .catch((error) => {
+          console.error("An error occurred:", error);
+        });
+    </script>
+  </body>
+</html>
