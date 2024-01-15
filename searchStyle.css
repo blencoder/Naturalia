@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 10px;
+  align-items: center;
+  padding-bottom: 5px;
+  box-shadow: 0px 5px 5px rgb(0, 0, 0);
+  background-color: white;
+  top: 0; /* Position the header at the top */
+}
+
+header button {
+  margin: 5px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  border: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: x-large;
+  padding: 10px;
+}
+header button:hover {
+  background-color: green;
+}
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+#top {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.butterfly-text {
+  margin: 20px;
+}
+#logo {
+  height: 60px;
+  width: 48px;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+#left,
+#right {
+  text-align: right; /* Right-align text in left and right divs */
+  display: flex;
+}
+
+/* Style individual elements if needed */
+#middle {
+  display: flex;
+  justify-content: center;
+}
+#user,
+#searchLogo {
+  height: 40px;
+  width: 40px;
+  margin-right: 12px;
+  margin-left: 12px;
+  filter: invert(0);
+  border-radius: 0;
+}
+#searchLogo {
+  margin-left: 70px;
+}
+#Header-Name {
+  color: rgb(0, 0, 0);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.current {
+  background-color: rgb(255, 255, 255);
+  color: black;
+
+  text-decoration: underline;
+  text-decoration-color: chartreuse;
+  text-decoration-thickness: 3px;
+}

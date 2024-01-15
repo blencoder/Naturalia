@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Naturalia - Acceuil</title>
+    <title>Naturalia - Parcourir</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="logo_green.png" type="png" />
   </head>
@@ -17,12 +17,12 @@
         <h2 id="Header-Name">Naturalia</h2>
       </div>
       <div id="middle">
-        <button class="current"><a href="index.html">Acceuil</a></button>
+        <button ><a href="index.html">Acceuil</a></button>
         <button>
-          <a href="signets.html">Signets</a>
+          <a  href="signets.html">Signets</a>
         </button>
-        <button>
-          <a href="parcourir.html">Parcourir</a>
+        <button class="current">
+          <a   href="parcourir.html">Parcourir</a>
         </button>
         <button>
           <a href="créer.html">Créer</a> 
@@ -38,31 +38,9 @@
         <a href="login.html">
           <img src="User.png" alt="" id="user" />
         </a>
-      </div> 
-    </header> 
-    <h1 id="date"></h1>
-    <div id="widgets">
-      <div class="widget"></div>
-      <div class="widget"></div>
-      <div class="widget"></div>
-      <div class="widget"></div>  
-    </div>
-    
-    <script>
-      let date = document.getElementById("date")
-      let message = ""
-      let x = new Date()
-      let y = x.getHours();
-     
-      if (y < 12){
-        message = "Bon matin"
-      }
-      else if (y < 20){
-        message = "Bonne après-midi"
-      }
-      else {
-        message = "Bon soir"
-      }
-      date.innerHTML = `${message}! Que voulez-vous faire aujourd'hui?`
-    </script>
+      </div>
+    </header>
+    <main>
+      <button><a href="index.html">Acceuil</a></button> 
+    </main>
 </html>
