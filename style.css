@@ -203,3 +203,8 @@ img {
   padding: 20px;
   text-align: center;
 }
+#line {
+  height: 1px;
+  background-color: #000;
+  width: 400px;
+}
